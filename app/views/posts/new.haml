@@ -1,0 +1,17 @@
+%h1 Создание записи
+
+- form_for(@post) do |f|
+  = f.error_messages
+
+  %p
+    = f.label "Заголовок"
+    %br
+    = f.text_field :title
+
+  %p
+    = f.label "Текст"
+    %br
+    = f.text_area :content
+
+  %p
+    = f.submit "Опубликовать"

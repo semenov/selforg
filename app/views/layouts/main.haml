@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %title Социальный блог о Ruby
+    = stylesheet_link_tag 'scaffold'
+    = stylesheet_link_tag 'main'
+  %body
+    #header
+      %h1= link_to 'Социальный блог о Ruby', root_path
+
+    #notice{ :style => "color: green" }     
+      = flash[:notice]
+    
+    #content
+      = yield

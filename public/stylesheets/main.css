@@ -1,0 +1,10 @@
+#header {
+  padding: 0 0 1em 0; }
+  #header h1 a {
+    text-decoration: none; }
+
+#content h1 {
+  font-size: 2em;
+  font-weight: normal; }
+#content #new-post-link {
+  padding: 1em 0 1em 0; }
