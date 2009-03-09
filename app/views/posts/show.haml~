@@ -1,2 +1,0 @@
-%h1= @post.title
-= simple_format @post.content

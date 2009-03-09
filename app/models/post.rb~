@@ -1,4 +1,0 @@
-class Post < ActiveRecord::Base
-  validates_presence_of :title, :body
-  named_scope :published, :conditions => {:published => true}  
-end
