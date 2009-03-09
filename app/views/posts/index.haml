@@ -1,5 +1,5 @@
 - for post in @posts
   .post
     %h1= link_to post.title, post
-    =h post.content
+    = markdown post.content
 
