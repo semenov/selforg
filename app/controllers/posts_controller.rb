@@ -40,7 +40,7 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       if @post.save
-        flash[:notice] = 'Post was successfully created.'
+        flash[:notice] = 'Запись успешно создана.'
         format.html { redirect_to(@post) }
         format.xml  { render :xml => @post, :status => :created, :location => @post }
       else
