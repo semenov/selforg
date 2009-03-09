@@ -1,10 +1,26 @@
 #header {
   padding: 0 0 1em 0; }
   #header h1 a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #859; }
+  #header h1 a:hover {
+    color: #FFF;
+    background-color: #859; }
 
 #content h1 {
   font-size: 2em;
   font-weight: normal; }
 #content #new-post-link {
   padding: 1em 0 1em 0; }
+#content #posts .post {
+  padding: 1.5em 0 0 0; }
+#content #posts .post .title {
+  display: inline; }
+#content #posts .post .date {
+  display: inline;
+  padding: 0 0 0 0.5em; }
+#content .date {
+  font-style: italic;
+  color: #AAA; }
+#content .content p {
+  font-size: 1.2em; }

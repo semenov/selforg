@@ -7,4 +7,8 @@ module ApplicationHelper
     text.blank? ? "" : Maruku.new(text).to_html
   end
   
+  def nice_date(date)
+    date.strftime("%d.%m.%Y")
+  end
+  
 end

@@ -1,3 +1,6 @@
-%h1.title= @post.title
-.content
-  = markdown @post.content
+#post
+  %h1.title= @post.title
+  .content
+    = markdown @post.content
+  .date
+    = nice_date @post.created_at

@@ -1,5 +1,9 @@
-- for post in @posts
-  .post
-    %h1= link_to post.title, post
-    = markdown post.content
+#posts
+  - for post in @posts
+    .post
+      %h1.title= link_to post.title, post
+      .date
+        = nice_date post.created_at
+      .content
+        = markdown post.content
 
