@@ -1,22 +1,35 @@
+!violet = #859
+!violet_hover = !violet - 40
+
 #header
   :padding 0 0 1em 0
   
-  h1 a
-    :text-decoration none
-    :color #859
+  h1 
+    :padding 0 0 0.1em 0
+    a
+      :text-decoration none
+      :color = !violet
+      
+      &:hover
+        :color = !violet_hover
+        :background-color #FFF
+      
     
-  h1 a:hover
-    :color #FFF
-    :background-color #859
+#new-post-link a
+  :color #FFF
+  :background-color = !violet
+  :text-decoration none
+  :padding 0.3em
+  
+  &:hover
+    :background-color = !violet_hover
+
     
 #content
   h1
     :font-size 2em    
     :font-weight normal
-    
-  #new-post-link
-    :padding 1em 0 1em 0
-    
+
   #posts .post 
     :padding 1.5em 0 0 0
     
@@ -34,4 +47,16 @@
     
   .content p
     :font-size 1.2em
+    
+  input#post_title
+    :width 50%
+    :font-size 2em
+    
+  textarea#post_content
+    :width 50%
+    :font-size 1.2em
+      
+    
+#footer
+  :padding 2em 0 2em 0    
 
