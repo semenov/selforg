@@ -5,5 +5,7 @@
       .date
         = nice_date post.created_at
       .content
-        = markdown post.content
+        = markdown post.excerpt
+        - if post.has_more?
+          = link_to "Читать далее", post
 
