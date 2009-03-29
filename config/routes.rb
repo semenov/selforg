@@ -1,5 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
   map.root :controller => "posts"
+  map.post ':year/:month/:day/:slug', :controller => 'posts', :action => 'show', 
+    :requirements => { :year => /\d{4}/, :month => /\d{2}/, :day => /\d{2}/ }
   map.resources :posts
   map.resource :user_session
 
@@ -30,7 +32,7 @@ ActionController::Routing::Routes.draw do |map|
   #   end
 
   # Sample resource route within a namespace:
-  #   map.namespace :admin do |admin|
+    #   map.namespace :admin do |admin|
   #     # Directs /admin/products/* to Admin::ProductsController (app/controllers/admin/products_controller.rb)
   #     admin.resources :products
   #   end
